@@ -28,7 +28,7 @@ class MZNavigationViewController: UINavigationController {
         if self.childViewControllers.count > 0 {
             
             viewController.hidesBottomBarWhenPushed = true
-            let returnImage = UIImage(named: "nav_return")
+            let returnImage = UIImage(named: "icon_arrow_white_left")?.withRenderingMode(.alwaysOriginal)
             viewController.navigationItem.leftBarButtonItem = UIBarButtonItem(image: returnImage, style: .plain, target: self, action: #selector(backButtonTapClick))
         }
         
@@ -47,22 +47,26 @@ extension MZNavigationViewController: UIGestureRecognizerDelegate {
     // 添加全局手势
     fileprivate func setupGesture() {
         
-        let target = self.navigationController?.interactivePopGestureRecognizer!.delegate
+        let target = self.interactivePopGestureRecognizer?.delegate
         let pan = UIPanGestureRecognizer(target:target, action:Selector(("handleNavigationTransition:")))
         pan.delegate = self
         self.view.addGestureRecognizer(pan)
         
         // 禁用掉系统自带的手势返回
-        self.navigationController?.interactivePopGestureRecognizer?.isEnabled = false
+        self.interactivePopGestureRecognizer?.isEnabled = false
     }
-    
-    func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIGestureRecognizer) -> Bool {
+
+    func gestureRecognizerShouldBegin(_ gestureRecognizer: UIGestureRecognizer) -> Bool {
         
-        if self.childViewControllers.count == 1 {
+//        for viewController: UIViewController in self.childViewControllers {
+        
+//            if viewController .isKind(of: MZUserInforViewController.self) {
+//
+//                return false
+//            }
             
-            return false
-        }
+//        }
         
-        return true
+        return self.childViewControllers.count > 1
     }
 }

@@ -24,6 +24,11 @@
 		293293E821258E840014691A /* MZGlobalConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293293E721258E840014691A /* MZGlobalConst.swift */; };
 		293293ED21266EA20014691A /* MZUserInforView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293293EC21266EA20014691A /* MZUserInforView.swift */; };
 		293293EF212670DE0014691A /* MZProfileViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293293EE212670DE0014691A /* MZProfileViewCell.swift */; };
+		293293F121267F270014691A /* MZImportConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293293F021267F270014691A /* MZImportConst.swift */; };
+		29E582FE2126847100FF246B /* UILabelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E582FD2126847100FF246B /* UILabelExtension.swift */; };
+		29E583002126858D00FF246B /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E582FF2126858D00FF246B /* UIButtonExtension.swift */; };
+		29E583022126B56800FF246B /* MZUserInforViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E583012126B56800FF246B /* MZUserInforViewController.swift */; };
+		29E583042126B70700FF246B /* MZUserInfoViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E583032126B70700FF246B /* MZUserInfoViewCell.swift */; };
 		F72001381B646CDD1CD66709 /* Pods_MZDistributors.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A8D31A62788F73B2E60FCFA /* Pods_MZDistributors.framework */; };
 /* End PBXBuildFile section */
 
@@ -69,6 +74,11 @@
 		293293E721258E840014691A /* MZGlobalConst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MZGlobalConst.swift; sourceTree = "<group>"; };
 		293293EC21266EA20014691A /* MZUserInforView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MZUserInforView.swift; sourceTree = "<group>"; };
 		293293EE212670DE0014691A /* MZProfileViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MZProfileViewCell.swift; sourceTree = "<group>"; };
+		293293F021267F270014691A /* MZImportConst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MZImportConst.swift; sourceTree = "<group>"; };
+		29E582FD2126847100FF246B /* UILabelExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelExtension.swift; sourceTree = "<group>"; };
+		29E582FF2126858D00FF246B /* UIButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
+		29E583012126B56800FF246B /* MZUserInforViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MZUserInforViewController.swift; sourceTree = "<group>"; };
+		29E583032126B70700FF246B /* MZUserInfoViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MZUserInfoViewCell.swift; sourceTree = "<group>"; };
 		EB271001D943EAEE5DA0A1C0 /* Pods-MZDistributors.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MZDistributors.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MZDistributors/Pods-MZDistributors.debug.xcconfig"; sourceTree = "<group>"; };
 		F9E63A4C426BD9C6CB066E7D /* Pods-MZDistributors.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MZDistributors.release.xcconfig"; path = "Pods/Target Support Files/Pods-MZDistributors/Pods-MZDistributors.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -210,6 +220,7 @@
 			isa = PBXGroup;
 			children = (
 				293293E521258E0B0014691A /* MZProfileViewController.swift */,
+				29E583012126B56800FF246B /* MZUserInforViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -271,6 +282,8 @@
 			isa = PBXGroup;
 			children = (
 				2932934E212572990014691A /* UIColorExtension.swift */,
+				29E582FD2126847100FF246B /* UILabelExtension.swift */,
+				29E582FF2126858D00FF246B /* UIButtonExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -293,6 +306,7 @@
 			isa = PBXGroup;
 			children = (
 				293293E721258E840014691A /* MZGlobalConst.swift */,
+				293293F021267F270014691A /* MZImportConst.swift */,
 			);
 			path = Const;
 			sourceTree = "<group>";
@@ -300,8 +314,9 @@
 		293293EB21266E8A0014691A /* View */ = {
 			isa = PBXGroup;
 			children = (
-				293293EC21266EA20014691A /* MZUserInforView.swift */,
 				293293EE212670DE0014691A /* MZProfileViewCell.swift */,
+				293293EC21266EA20014691A /* MZUserInforView.swift */,
+				29E583032126B70700FF246B /* MZUserInfoViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -508,12 +523,17 @@
 				293293E421258DF70014691A /* MZStockViewController.swift in Sources */,
 				293293E821258E840014691A /* MZGlobalConst.swift in Sources */,
 				293293472125712D0014691A /* MZNavigationViewController.swift in Sources */,
+				29E582FE2126847100FF246B /* UILabelExtension.swift in Sources */,
 				29329349212571420014691A /* MZTabBarViewController.swift in Sources */,
 				293293EF212670DE0014691A /* MZProfileViewCell.swift in Sources */,
+				293293F121267F270014691A /* MZImportConst.swift in Sources */,
 				293293E221258DE10014691A /* MZHomeViewController.swift in Sources */,
 				293293E621258E0B0014691A /* MZProfileViewController.swift in Sources */,
 				2932930121256E380014691A /* ViewController.swift in Sources */,
+				29E583002126858D00FF246B /* UIButtonExtension.swift in Sources */,
+				29E583042126B70700FF246B /* MZUserInfoViewCell.swift in Sources */,
 				293292FF21256E380014691A /* AppDelegate.swift in Sources */,
+				29E583022126B56800FF246B /* MZUserInforViewController.swift in Sources */,
 				2932934B2125714D0014691A /* MZBaseViewController.swift in Sources */,
 				2932934F212572990014691A /* UIColorExtension.swift in Sources */,
 			);
@@ -694,7 +714,10 @@
 				DEVELOPMENT_TEAM = YQH3G2TB4A;
 				INFOPLIST_FILE = MZDistributors/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.mozi.MZDistributors;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -712,7 +735,10 @@
 				DEVELOPMENT_TEAM = YQH3G2TB4A;
 				INFOPLIST_FILE = MZDistributors/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.mozi.MZDistributors;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -728,7 +754,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YQH3G2TB4A;
 				INFOPLIST_FILE = MZDistributorsTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.mozi.MZDistributorsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -745,7 +775,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YQH3G2TB4A;
 				INFOPLIST_FILE = MZDistributorsTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.mozi.MZDistributorsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -761,7 +795,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YQH3G2TB4A;
 				INFOPLIST_FILE = MZDistributorsUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.mozi.MZDistributorsUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -777,7 +815,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YQH3G2TB4A;
 				INFOPLIST_FILE = MZDistributorsUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.mozi.MZDistributorsUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

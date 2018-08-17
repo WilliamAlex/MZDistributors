@@ -392,7 +392,7 @@ class SwiftProgress: NSObject {
     }
     
     /// Repair window has not been removed
-    static func hideNotice(_ sender: AnyObject) {
+    @objc static func hideNotice(_ sender: AnyObject) {
         if let window = sender as? UIWindow {
             
             if let v = window.subviews.first {
