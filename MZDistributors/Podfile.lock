@@ -1,0 +1,32 @@
+PODS:
+  - Alamofire (4.7.3)
+  - IQKeyboardManagerSwift (6.1.1)
+  - Kingfisher (4.8.1)
+  - SnapKit (4.0.0)
+  - SwiftProgressHUD (0.0.6)
+
+DEPENDENCIES:
+  - Alamofire
+  - IQKeyboardManagerSwift
+  - Kingfisher
+  - SnapKit
+  - SwiftProgressHUD
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - IQKeyboardManagerSwift
+    - Kingfisher
+    - SnapKit
+    - SwiftProgressHUD
+
+SPEC CHECKSUMS:
+  Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
+  IQKeyboardManagerSwift: 977affaeb4d6e971975c7790a6850f31d38f1207
+  Kingfisher: 868c1149679a7ab6869be118faa9b5aed154aaf0
+  SnapKit: a42d492c16e80209130a3379f73596c3454b7694
+  SwiftProgressHUD: bc419879ddd61c3bca8c89d6a1ede894ee05fa05
+
+PODFILE CHECKSUM: a4219d4c09b933e3366fac2c6e835f821323ec7f
+
+COCOAPODS: 1.5.3

@@ -22,6 +22,9 @@
 		293293E421258DF70014691A /* MZStockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293293E321258DF70014691A /* MZStockViewController.swift */; };
 		293293E621258E0B0014691A /* MZProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293293E521258E0B0014691A /* MZProfileViewController.swift */; };
 		293293E821258E840014691A /* MZGlobalConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293293E721258E840014691A /* MZGlobalConst.swift */; };
+		293293ED21266EA20014691A /* MZUserInforView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293293EC21266EA20014691A /* MZUserInforView.swift */; };
+		293293EF212670DE0014691A /* MZProfileViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293293EE212670DE0014691A /* MZProfileViewCell.swift */; };
+		F72001381B646CDD1CD66709 /* Pods_MZDistributors.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A8D31A62788F73B2E60FCFA /* Pods_MZDistributors.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +45,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1A8D31A62788F73B2E60FCFA /* Pods_MZDistributors.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MZDistributors.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		293292FB21256E380014691A /* MZDistributors.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MZDistributors.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		293292FE21256E380014691A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2932930021256E380014691A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -63,6 +67,10 @@
 		293293E321258DF70014691A /* MZStockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MZStockViewController.swift; sourceTree = "<group>"; };
 		293293E521258E0B0014691A /* MZProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MZProfileViewController.swift; sourceTree = "<group>"; };
 		293293E721258E840014691A /* MZGlobalConst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MZGlobalConst.swift; sourceTree = "<group>"; };
+		293293EC21266EA20014691A /* MZUserInforView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MZUserInforView.swift; sourceTree = "<group>"; };
+		293293EE212670DE0014691A /* MZProfileViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MZProfileViewCell.swift; sourceTree = "<group>"; };
+		EB271001D943EAEE5DA0A1C0 /* Pods-MZDistributors.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MZDistributors.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MZDistributors/Pods-MZDistributors.debug.xcconfig"; sourceTree = "<group>"; };
+		F9E63A4C426BD9C6CB066E7D /* Pods-MZDistributors.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MZDistributors.release.xcconfig"; path = "Pods/Target Support Files/Pods-MZDistributors/Pods-MZDistributors.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F72001381B646CDD1CD66709 /* Pods_MZDistributors.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,6 +106,8 @@
 				2932931221256E390014691A /* MZDistributorsTests */,
 				2932931D21256E3A0014691A /* MZDistributorsUITests */,
 				293292FC21256E380014691A /* Products */,
+				A1B0FF0C999016486A10A291 /* Pods */,
+				93109A39E2EED05E0C085B73 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -190,8 +201,7 @@
 			isa = PBXGroup;
 			children = (
 				2932933B212570220014691A /* Controller */,
-				2932933C212570220014691A /* Model */,
-				2932933D212570220014691A /* View */,
+				293293EB21266E8A0014691A /* View */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -202,20 +212,6 @@
 				293293E521258E0B0014691A /* MZProfileViewController.swift */,
 			);
 			path = Controller;
-			sourceTree = "<group>";
-		};
-		2932933C212570220014691A /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		2932933D212570220014691A /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		2932933E212570220014691A /* Stock */ = {
@@ -301,6 +297,32 @@
 			path = Const;
 			sourceTree = "<group>";
 		};
+		293293EB21266E8A0014691A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				293293EC21266EA20014691A /* MZUserInforView.swift */,
+				293293EE212670DE0014691A /* MZProfileViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		93109A39E2EED05E0C085B73 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1A8D31A62788F73B2E60FCFA /* Pods_MZDistributors.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A1B0FF0C999016486A10A291 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EB271001D943EAEE5DA0A1C0 /* Pods-MZDistributors.debug.xcconfig */,
+				F9E63A4C426BD9C6CB066E7D /* Pods-MZDistributors.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -308,9 +330,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2932932321256E3A0014691A /* Build configuration list for PBXNativeTarget "MZDistributors" */;
 			buildPhases = (
+				9718D2B307FAC64B3C23A98F /* [CP] Check Pods Manifest.lock */,
 				293292F721256E380014691A /* Sources */,
 				293292F821256E380014691A /* Frameworks */,
 				293292F921256E380014691A /* Resources */,
+				3635A81D2178114D9B1D3DFD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -428,15 +452,64 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3635A81D2178114D9B1D3DFD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MZDistributors/Pods-MZDistributors-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftProgressHUD/SwiftProgressHUD.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftProgressHUD.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MZDistributors/Pods-MZDistributors-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9718D2B307FAC64B3C23A98F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MZDistributors-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		293292F721256E380014691A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				293293ED21266EA20014691A /* MZUserInforView.swift in Sources */,
 				293293E421258DF70014691A /* MZStockViewController.swift in Sources */,
 				293293E821258E840014691A /* MZGlobalConst.swift in Sources */,
 				293293472125712D0014691A /* MZNavigationViewController.swift in Sources */,
 				29329349212571420014691A /* MZTabBarViewController.swift in Sources */,
+				293293EF212670DE0014691A /* MZProfileViewCell.swift in Sources */,
 				293293E221258DE10014691A /* MZHomeViewController.swift in Sources */,
 				293293E621258E0B0014691A /* MZProfileViewController.swift in Sources */,
 				2932930121256E380014691A /* ViewController.swift in Sources */,
@@ -613,6 +686,7 @@
 		};
 		2932932421256E3A0014691A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB271001D943EAEE5DA0A1C0 /* Pods-MZDistributors.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -620,10 +694,7 @@
 				DEVELOPMENT_TEAM = YQH3G2TB4A;
 				INFOPLIST_FILE = MZDistributors/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mozi.MZDistributors;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -633,6 +704,7 @@
 		};
 		2932932521256E3A0014691A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F9E63A4C426BD9C6CB066E7D /* Pods-MZDistributors.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -640,10 +712,7 @@
 				DEVELOPMENT_TEAM = YQH3G2TB4A;
 				INFOPLIST_FILE = MZDistributors/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mozi.MZDistributors;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -659,11 +728,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YQH3G2TB4A;
 				INFOPLIST_FILE = MZDistributorsTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mozi.MZDistributorsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -680,11 +745,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YQH3G2TB4A;
 				INFOPLIST_FILE = MZDistributorsTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mozi.MZDistributorsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -700,11 +761,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YQH3G2TB4A;
 				INFOPLIST_FILE = MZDistributorsUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mozi.MZDistributorsUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -720,11 +777,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YQH3G2TB4A;
 				INFOPLIST_FILE = MZDistributorsUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mozi.MZDistributorsUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

@@ -1,0 +1,14 @@
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '10.0'
+use_frameworks!
+
+target 'MZDistributors' do
+
+pod 'SnapKit'
+pod 'Kingfisher'
+pod 'Alamofire'
+pod 'IQKeyboardManagerSwift'
+pod 'SwiftProgressHUD'
+
+
+end
