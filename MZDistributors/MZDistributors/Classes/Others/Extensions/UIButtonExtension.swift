@@ -15,7 +15,7 @@ extension UIButton {
         self.init()
         
         self.titleLabel?.font = UIFont(name: "PingFang-SC-Regular", size: font)
-        self.titleLabel?.textColor = UIColor(hex: textColor)
+        self.setTitleColor(UIColor(hex: textColor), for: .normal)
         self.setImage(UIImage(named: img!), for: .normal)
         self.setTitle(title, for: .normal)
         self.addTarget(target, action: action!, for: .touchUpInside)
@@ -26,7 +26,7 @@ extension UIButton {
         self.init()
         
         self.titleLabel?.font = UIFont(name: "PingFang-SC-Regular", size: font)
-        self.titleLabel?.textColor = UIColor(hex: textColor)
+        self.setTitleColor(UIColor(hex: textColor), for: .normal)
         self.setBackgroundImage(UIImage(named: bgImg!), for: .normal)
         self.setTitle(title, for: .normal)
         self.addTarget(target, action: action!, for: .touchUpInside)
@@ -37,7 +37,7 @@ extension UIButton {
         self.init()
         
         self.titleLabel?.font = UIFont(name: "PingFang-SC-Regular", size: font)
-        self.titleLabel?.textColor = UIColor(hex: textColor)
+        self.setTitleColor(UIColor(hex: textColor), for: .normal)
         self.setTitle(title, for: .normal)
         self.addTarget(target, action: action!, for: .touchUpInside)
         self.sizeToFit()

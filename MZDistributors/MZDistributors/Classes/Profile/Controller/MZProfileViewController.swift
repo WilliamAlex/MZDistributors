@@ -8,7 +8,6 @@
 
 import UIKit
 
-
 let PROFILETABLEVIEWCELLID = "PROFILETABLEVIEWCELLID"
 class MZProfileViewController: MZBaseViewController {
     
@@ -88,6 +87,9 @@ extension MZProfileViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         print("您点击了第: \(indexPath.row)个cell")
+        let Vc = MZAddressViewController()
+        self.navigationController?.pushViewController(Vc, animated: true)
+        
     }
 }
 

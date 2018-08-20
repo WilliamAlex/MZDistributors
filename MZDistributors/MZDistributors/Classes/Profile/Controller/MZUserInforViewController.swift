@@ -15,6 +15,7 @@ class MZUserInforViewController: MZBaseViewController {
     fileprivate lazy var tableView: UITableView = {
         
         let tv = UITableView(frame: CGRect(x: 0, y: 0, width: MZSCREENW, height: MZSCREENH), style: .plain)
+        tv.backgroundColor = UIColor(hex: "#F8F8F8")
         tv.delegate = self
         tv.dataSource = self
         tv.rowHeight = 50

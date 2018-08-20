@@ -18,7 +18,7 @@ class MZNavigationViewController: UINavigationController {
         navigationBar.isTranslucent = true
         navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white,
                                              NSAttributedStringKey.font: UIFont(name: "PingFang-SC-Regular", size: 18) ?? ""]
-    
+        navigationBar.tintColor = UIColor.white
         // 添加全局手势
         setupGesture()
     }
